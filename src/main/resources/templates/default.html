@@ -5,5 +5,20 @@
       
       <p> Hello, <p th:text="${name}"></p></p>
       
+      
+      <p th:if="${isActive}"> Status is Active</p>
+      <p th:unless="${isActive}">Status is Not Active</p>
+      
+      <p th:text="${age}"></p>
+      <p th:text="${sum}"></p>
+      
+      <table border="2">
+      	<tr th:each="name : ${nameList}">
+      	
+      		<td th:text="${name}"></td> 
+      	
+      	</tr>
+      </table>
+      
       </body>
       </html>
